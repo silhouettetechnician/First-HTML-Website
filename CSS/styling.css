@@ -1,0 +1,640 @@
+/***************** MASTER MENU'S ***************************/
+.slide-out{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.menu-toggle{
+    width: 50px;
+    height: 50px;
+    background-color: transparent
+    opacity: 0%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    z-index: 1;
+    transition: .5s;
+}
+
+.menu-toggle span{
+    position: absolute;
+    display: block;
+    height: 4px;
+    background: #262626;
+    width: 60%;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    transition: .5s;
+}
+
+.menu-toggle span:nth-child(1){
+    top: 30%;
+}
+
+.menu-toggle span:nth-child(3){
+    top: 70%;
+}
+
+.menu-toggle.active span:nth-child(1){
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg)
+}
+.menu-toggle.active span:nth-child(2){
+    opacity: 0;
+}
+.menu-toggle.active span:nth-child(3){
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg)
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: -100%;
+    height: 50px;
+    transition: .5s;
+}
+
+.menu.active{
+    left: 70px
+}
+.menu ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu ul li{
+    list-style: none
+}
+
+.menu ul li a{
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    color: black;
+    text-decoration: none;
+    transition: .5s;
+    font-weight:normal;
+    font-family:"lovelo"; 
+    font-style: normal;  
+    text-align: center;
+    font-size: 15px;
+    word-spacing: 14px; 
+}
+
+.menu ul li a:hover{
+    text-decoration: none;
+    border-bottom: 4px solid black;
+}
+
+
+/*HOMEPAGE*/
+#homepage {
+    background-image:url("../images/black-and-white-darkness-fashion-67603.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    filter: contrast(30%);
+}
+
+
+.ST-title {
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 50px; font-style: normal; font-variant: normal; font-weight: bold; line-height: 0px;
+    text-align: center;
+}
+    
+
+#homepage #drop-downbar{
+    font-family: 'Roboto', sans-serif; font-size: 20px; font-variant: normal; font-weight:normal;
+    font-style: normal;
+    position: relative;
+    text-decoration-line: none;
+    text-align: left;
+    margin-left: 20px;
+    word-spacing: 15px;
+    top: 10px;
+    float: left;
+        
+}
+
+#drop-downbar a{
+    text-decoration: none;
+    color: black;
+    
+}
+
+#drop-downbar a:hover{
+    color: white;
+    text-decoration: underline;
+}
+.shopping-cart{
+    text-align: right;
+    margin-right:;
+    font-family: 'Roboto', sans-serif; font-size: 12px; font-variant: normal; font-weight:normal;
+    font-style: normal;
+    top: 10px;
+    line-height: 2.3;
+}
+
+.shopping-cart a{
+    text-decoration: none;
+    color: white;
+}
+
+.shopping-cart a:hover{
+    color: white;
+    text-decoration: underline;
+}
+    
+.shopping-cart #cart{
+    width: 25px;
+    position: absolute;
+}
+
+
+.shopping-cart #cart:hover{
+    filter: contrast(0%);
+}
+    
+#logo-container{
+    height: 200px;
+    width: 100%;
+    margin-top: 200px;
+    position:relative
+}
+
+
+
+#logo-container #homepage-logo{
+    width: 200px;
+    top: 50%;
+    margin-left: 20px;
+    transition: filter 1s;
+}
+
+#homepage-logo:hover{
+
+    filter: contrast(0%)
+}
+
+#image-container-home{
+    width:800px;
+    height:400px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+#image-container-home #homepage-image{
+    width: 100%;
+    margin: 0;
+   position: absolute;
+   top: 50%;  
+   transform: translate(0, -50%);
+
+}
+    
+.logo-button {
+    
+    position:fixed;
+    width: 200px;
+    margin-top:5px 8px 8px 5px;
+}
+
+}
+
+#shop #shop-title{
+    
+   font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 25px; font-style: normal; font-variant: normal; font-weight: bold; line-height: 20px;
+    text-align: center;
+
+}
+
+footer{
+
+    bottom:0;
+    width:100%;
+    height:160px;
+    position: relative;
+    
+}
+.rights-reserved {
+    
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    font-size: 13px;
+    width:100%;
+    text-align:center;
+    position:fixed;
+    bottom: 0%;
+    top: 105%
+    
+    
+    
+    }
+/********************** SHOP *********************/
+.page-content{
+    position: relative;
+    z-index: 0;
+}
+
+/*
+#shop .menu {
+    width: 100%;
+    list-style: none; 
+    position: fixed;
+    top: 5px;
+    word-spacing: 14px;
+*/
+    
+}
+/*
+
+#shop .menu a{
+   list-style: none;
+    list-style: none;
+    font-weight:normal;
+    font-family:"lovelo"; 
+    font-style: normal;  
+    text-align: center;
+    margin-top: 40px;
+    font-size: 30px;
+    word-spacing: 14px;
+
+  
+}
+*/
+
+/*
+#shop .menu a:hover{
+    color: white;
+    text-decoration: underline
+}
+*/
+/*
+
+#shop #shop-logo{
+    width: 150px;
+    position:absolute;
+    float: left;
+    left: 0px;
+    top: 10px;
+    z-index: 1;
+}
+
+#shop #shop-logo:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+*/
+
+/*
+.shop-wrapper{
+    margin-top: 60px
+}
+*/
+
+.page-wrap{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.pop-up{
+    
+    position: relative; 
+    top: 100px; 
+    width: 450px;
+    margin: 0 auto; 
+    text-align: center;
+    
+}
+
+.pop-up #pop-up-container{
+    background: white;
+    padding: 10px 30px; 
+    position: absolute; 
+    top: 50px; 
+    width: 100%;
+    box-sizing: border-box;
+    border-style:dotted;
+    z-index: 1;
+  
+}
+#pop-up-container h1{
+    font-family: Futura, Arial, sans-serif; font-size: 50px; font-style: normal; font-variant: normal; font-weight: bold; line-height: 0px;
+    text-align: center; top: 0px;
+}
+#pop-up-container h2{
+    font-family: "niramit";
+}
+
+#pop-up-container h3{
+    font-family: "niramit";
+    font-style: italic;
+    font-weight: 500;
+}
+#pop-up-container p{
+    font-family: 'Carrois Gothic SC', sans-serif;
+}
+#pop-up-container input{
+    padding: 15px;
+    border: 3px solid black;
+    width: 170px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.pop-up button{
+  padding: 10px;
+  border: 0;
+  color: #fff;
+  background: #333;
+  margin-top: 4px;
+  border-radius: 10px 10px 10px 10px;
+  border: 1px solid #333;
+  font-size: 18px;
+}
+#pop-up-container #close{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-family: "lovelo";
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    width: 22px;
+    height: 20px;
+   cursor:pointer;
+    
+    display:inline-block;
+
+}
+
+/***************POP UP ANIMATED STYLES **************/
+
+.pop-up{
+    top: -600px;
+    animation: drop;
+    animation-duration: 0.8s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease 
+    -webkit-animation-name: drop;
+    -webkit- animation-duration: 0.8s;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-delay: 1.5s;
+    -webkit-animation-timing-function: ease;
+    z-index: 1;
+
+}
+@keyframes drop{
+    0%{}
+    70%{transform: translateY(700px)}
+    100%{transform: translateY(680px)}
+}
+@-webkit-keyframes drop{
+    0%{}
+    70%{-webkit-transform: translateY(700px)}
+    100%{-webkit-transform: translateY(680px)}
+}
+#image-container-shop,
+#image-container-shop * {
+	box-sizing: border-box;
+}
+#image-container-shop {
+	position: relative;
+    display: inline-block;
+	overflow: hidden;
+    height: 550px
+}
+
+
+#image-container-shop .homepage-image{
+    display: flow-root;
+    width: 415px;
+    margin: 0 5px;
+}
+
+#image-container-shop .overlay{
+    opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	color: #fff;
+	padding: 15px;
+	-moz-transition: all 0.4s ease-in-out 0s;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-ms-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+
+}
+#image-container-shop:hover .overlay, 
+#image-container-shop.active .overlay{
+    opacity: 1;
+}
+
+
+#image-container-shop .hover-over {
+    
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 15px; font-style: normal; font-variant: normal; font-weight:inherit; line-height: 40px;
+    font-style: normal;
+    text-align: center;
+	font-size: 45px;
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+#image-container-shop .hover-over_mobile {
+	font-size: 15px;
+	border-top: 1px solid rgb(179, 179, 179); /* for old browsers */
+	border-top: 1px solid rgba(179, 179, 179, 0.7);
+	margin-top: 5px;
+	padding-top: 2px;
+	display: none;
+}
+#image-container-shop.active .hover-over_mobile {
+    display: block;
+}
+
+/*
+#shop #shop-logo-container{
+    width:15px;
+    height:50px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    padding: 10px
+}
+*/
+
+
+}
+
+/***************CONTACT********************/
+#contact{
+    margin: 0;
+    position: relative;
+}
+#contact #contact-image{
+    width: 50%;
+   margin: auto;
+    }
+#contact-logo{
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+#contact #media {
+    
+    margin: 0 auto;
+    width: 600px;
+    position: relative;
+    top: px;
+    color: black;
+    font-weight: normal;
+    font-size: 18px;
+    letter-spacing: 0px;
+    line-height: 1.5em;
+    font-size: 48px;
+    font-family: 'Carrois Gothic SC', sans-serif;
+    font-weight: 200;
+    font-size: 14px;
+    letter-spacing: 0em;
+    line-height: 1.4em;
+    margin-bottom: 70px;
+    vertical-align:baseline;
+    
+}
+
+#contact h2{
+    
+    border-bottom: solid black 2px;
+    padding-bottom: 5px
+}
+
+#contact #form{
+    
+    color: black;
+    width: 600px;
+    margin: 0 auto;
+}
+
+#contact #form input{
+    width:62.7%;
+    background: white;
+    height: 20px;
+    border-radius: 8px
+}
+
+#contact #submit{
+    width:100px;
+}
+
+#contact #contact-text{
+    width:62.7%;
+    background: white;
+    border-radius: 8px;
+}
+
+/*
+#contact .menu {
+    
+    list-style: none;
+    list-style: none;
+    font-weight:normal;
+    font-family:"lovelo"; 
+    font-style: normal;  
+    text-align: center;
+    margin-top: 40px;
+    font-size: 30px;
+    word-spacing: 14px;
+*/
+
+    
+}
+/***********************ABOUT PAGE *******************/
+
+#about {
+    background-color: black;
+    color: #BBBBBB;
+}
+
+@font-face{
+    font-family:"lovelo";
+    src: url(fonts/Lovelo Black.otf);
+}
+
+/*
+.menu {
+    
+    list-style: none;
+    list-style: none;
+    font-weight:normal;
+    font-family:"lovelo"; 
+    font-style: normal;  
+    text-align:
+    margin-top: 40px;
+    font-size: 20px;
+    word-spacing: 14px;
+    
+}
+*/
+
+/*
+.menu a {
+    color: #BBBBBB;
+    text-decoration: none;
+}
+*/
+
+/*
+.menu a:hover{
+    color: #d3d3d3;
+}
+*/
+
+.body-text{
+    width: 600px;
+    margin: 0 auto;
+    height:auto
+}
+
+
+#about-header{
+    font-size: 48px;
+    font-family: 'Carrois Gothic SC', sans-serif;
+    text-decoration: underline;
+    border-bottom: 5px;
+}
+
+#about .page-text{
+    
+    font-size: 12px;
+    font-family: 'Carrois Gothic SC', sans-serif;
+    line-height: 25px
+   
+}
+
+
+
+/**************** HELP PAGE *****************/
+

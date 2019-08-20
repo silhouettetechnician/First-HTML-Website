@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang=eng>
+<head>
+    <meta charset="UTF-8">
+    <title>Silhouette Technician Shop</title>
+    <link href="https://fonts.googleapis.com/css?family=Bungee|Carrois+Gothic+SC|Graduate|Montserrat+Subrayada" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Niramit:200i,300i,500" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/styling.css">
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.menu-toggle').click(function(){
+                $('.menu-toggle').toggleClass('active');
+                $('nav').toggleClass('active');
+                                    })
+        })
+    </script>
+
+</head>
+    <body id="shop">
+       
+        <header class="slide-out">
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+    <nav class="menu">
+           <ul>
+            <li><a href="_index.html">Home</a></li>
+            <li><a href= "About.html">About</a></li>
+            <li><a href= "Contact.html">Contact</a></li>
+            <li><a href="">Lookbook</a></li>
+        </ul>
+    </nav>  
+        </header>
+       
+        <div class="pop-up">
+        <div id="pop-up-container">
+        <p>WHY DON'T YOU ENJOY</p>
+        <h1>10% OFF</h1>
+        <h2>Plus free shipping</h2>
+        <h3>on your first purchase with us</h3>
+        <p>WHEN YOU JOIN OUR MAILING LIST</p>
+        <input type="email" placeholder="enter your email" required>
+        <button>GET MY 10% OFF</button>
+        <p style="text-decoration: underline; cursor: pointer" onclick='this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode); return false;'>NO THANKS</p>
+        <span id='close' onclick='this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode); return false;'>x</span>
+        </div>
+        </div>
+       <!-- <img id="shop-logo" src="images/ST-Web-Logo.png">-->
+        
+        <div class="page-wrap">
+        
+
+
+        <div class="page-content">
+            <br>
+            <br>
+            <div class= "shop-wrapper">
+            
+            
+            <div id="image-container-shop">
+            
+            <img class="homepage-image" src="images/item%20shirt.jpg">
+            <div class="overlay">
+            <div class="hover-over">
+            'Winston' Chelsea Boots <br> £450
+            </div>
+            
+            </div>
+            </div>
+
+            <div id="image-container-shop">
+            <img class="homepage-image" src="images/item%20waistcoat.jpg">
+            <div class="overlay">
+            <div class="hover-over">'Huordroy' Graphic Tee <br> £120</div>
+            </div>
+            </div>
+
+
+            <div id="image-container-shop">
+            <img class="homepage-image" src="images/item%20jumper.jpg">
+            <div class="overlay">
+            <div class="hover-over">'Mycroft' cashmere jumper <br>£199</div>
+            </div>
+
+            </div>
+
+            <div id="image-container-shop">
+            <img class="homepage-image"src="images/item%20coat.jpg">
+            <div class="overlay">
+            <div class="hover-over">'Ashley' Coat <br> £500</div>
+            </div>
+
+            </div>
+            <div id="image-container-shop">
+            <img class="homepage-image"src="images/item%20jacket.jpg">
+            <div class="overlay">
+            <div class="hover-over">'Marcus' Ripped Jeans <br> £249</div>
+            </div>
+            </div>
+            </div>
+        </div>
+
+        </div>
+    </body>
+    
+</html>
